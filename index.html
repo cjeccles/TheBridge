@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="PWCApp">
+  <link rel="apple-touch-icon" href="/images/icons/icon-192x192.png" sizes="192x192">
+  <script src="script.js" type="module"></script>
+</head>
+
+<body id="main">
+  <div id="click-to-start" class="fullscreen">
+    <h1 id="screensaver-title" class="animate-pulse">
+      <svg class="inline animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+        viewBox="0 0 24 24">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+        <path class="opacity-75" fill="currentColor"
+          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+        </path>
+      </svg>
+      Loading...
+    </h1>
+    <img id="background-img" src="subbg.webp" alt="Submarines made of particles passing by in the background from various angles" />
+  </div>
+  <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>

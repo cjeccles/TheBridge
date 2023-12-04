@@ -1,0 +1,69 @@
+{
+  "lastUpdate": "2023-11-14T15:45:00",
+  "version": "0.5",
+  "mainTiles": [
+    {
+      "title": "BAE Systems Careers",
+      "categoryName": "bae-careers",
+      "isBae": true,
+      "bg_color": "#FFFFFF",
+      "img": "Bae-Systems-Logo.png",
+      "items": [
+        {
+          "title": "Barrow",
+          "url": "https://www.baesystems.com/en/careers/careers-in-the-uk/locations/barrow",
+          "isBae": true,
+          "img": "BAE-Barrow.webp",
+          "forceTitle": true
+        },
+        {
+          "title": "Central",
+          "url": "https://jobsearch.baesystems.com/",
+          "isBae": true,
+          "img": "BAE-UK-Sites.png",
+          "forceTitle": true
+        },
+        {
+          "title": "Early Careers",
+          "url": "https://www.baesystems.com/en/careers/careers-in-the-uk/early-careers",
+          "isBae": true
+        }
+      ]
+    },
+    {
+  "title": "Inspira",
+  "url": "https://www.inspira.org.uk/help-for-you",
+  "img": "inspira.png",
+  "bg_color": "#FFFFFF"
+  },
+    {
+      "title": "NHS",
+      "url": "https://www.healthcareers.nhs.uk/",
+      "img": "nhs.jpg",
+      "bg_color": "#005EB8"
+    },
+    {
+      "title": "Westmorland & Furness Council",
+      "url": "https://westmorlandandfurness.gov.uk/your-council/jobs",
+      "img": "WFC.jpg",
+      "bg_color": "#FFFFFF"
+    },
+    {
+      "title": "Ørsted",
+      "url": "https://orsted.co.uk/careers/open-positions",
+      "img": "Orsted.jpeg",
+      "bg_color": "#4099DA"
+    },
+    {
+      "title": "Oxleys",
+      "url": "https://www.oxleygroup.com/contact-us/employment",
+      "img": "oxleys.png"
+    },
+    {
+      "title": "Ministry of Defence",
+      "url": "https://des.mod.uk/job_categories/barrow-in-furness/",
+      "img": "mod.png",
+      "bg_color": "#FFFFFF"
+    }
+  ]
+}
