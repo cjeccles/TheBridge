@@ -162,10 +162,10 @@ html {
 
 #version {
   position: absolute;
-  bottom: 0px;
+  top: 0px;
   right: 0px;
   padding: 5px;
-  opacity: 0.4;
+  opacity: 0.2;
 }
 
 .version-good {
