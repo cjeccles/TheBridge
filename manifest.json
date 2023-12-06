@@ -1,6 +1,6 @@
 {
   "name" : "TheBridge",
-  "short_name" : "The Bridge App (v0.5)",
+  "short_name" : "The Bridge App (v0.6)",
   "theme_color" : "#000000",
   "background_color" : "#000000",
   "display": "standalone",
