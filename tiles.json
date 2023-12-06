@@ -1,6 +1,7 @@
 {
-  "lastUpdate": "2023-11-14T15:45:00",
-  "version": "0.5",
+  "lastUpdate": "2023-12-04T10:45:00",
+  "randomComment": "im a random comment",
+  "version": "0.6",
   "mainTiles": [
     {
       "title": "BAE Systems Careers",
@@ -31,11 +32,23 @@
       ]
     },
     {
-  "title": "Inspira",
-  "url": "https://www.inspira.org.uk/help-for-you",
-  "img": "inspira.png",
-  "bg_color": "#FFFFFF"
-  },
+      "title": "Inspira",
+      "url": "https://www.inspira.org.uk/help-for-you",
+      "img": "inspira.png",
+      "bg_color": "#FFFFFF"
+    },
+    {
+      "title": "Cumbria Careers Hub",
+      "url": "https://www.careershubcumbria.co.uk",
+      "img": "cumbria-careers-hub.png",
+      "bg_color": "#FFFFFF"
+    },
+    {
+      "title": "Cumbria Local Enterprise Partnership",
+      "url": "https://www.thecumbrialep.co.uk",
+      "img": "cumbria-lep.jpg",
+      "bg_color": "#FFFFFF"
+    },
     {
       "title": "NHS",
       "url": "https://www.healthcareers.nhs.uk/",
