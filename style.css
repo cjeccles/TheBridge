@@ -159,3 +159,19 @@ html {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
+
+#version {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding: 5px;
+  opacity: 0.4;
+}
+
+.version-good {
+  color: white;
+}
+
+.version-bad {
+  color: red;
+}

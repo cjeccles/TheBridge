@@ -1,4 +1,6 @@
 import data from "./tiles.json" assert {type: 'json'};
+import manifest from "./manifest.json" assert {type: 'json'};
+
 
 var currentLocation = 'screensaver';
 var openedNewWindow = false;
@@ -51,7 +53,36 @@ function buildPage(data) {
   var start = document.getElementById('click-to-start');
   start.addEventListener('click', toggleStart);
   var ssTitle = document.getElementById('screensaver-title');
-  ssTitle.innerHTML = 'Tap on the screen to view (' + data.version + ')';
+  ssTitle.innerHTML = 'Tap on the screen to view';
+
+  const apiURL = 'https://api.github.com/repos/cjeccles/TheBridge/contents/manifest.json'
+
+  fetch(apiURL)
+    .then(response => response.json())
+    .then(gitData => {
+      const decodedContent = atob(gitData.content);
+
+      const gitManifest = JSON.parse(decodedContent);
+
+      console.log(gitManifest);
+
+      var versionEl = document.createElement('div');
+      versionEl.setAttribute('id', 'version');
+      if (data.version == gitManifest.version) {
+        versionEl.innerHTML = 'Version: ' + data.version;
+        versionEl.classList.add('version-good');
+      } else {
+        versionEl.innerHTML = 'Version: ' + data.version + ' (Update Available)';
+        versionEl.classList.add('version-bad');
+      }
+
+
+      console.log('app version: ' + data.version);
+      console.log('git version: ' + gitManifest.version);
+      mainContainer.appendChild(versionEl);
+
+    })
+  
 }
 
 function createTiles(tiles, parentContainer, newCategoryName, prevLocation = 'home') {
