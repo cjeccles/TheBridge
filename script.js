@@ -51,7 +51,7 @@ function buildPage(data) {
   var start = document.getElementById('click-to-start');
   start.addEventListener('click', toggleStart);
   var ssTitle = document.getElementById('screensaver-title');
-  ssTitle.innerHTML = 'Tap on the screen to view';
+  ssTitle.innerHTML = 'Tap on the screen to view (' + data.version + ')';
 }
 
 function createTiles(tiles, parentContainer, newCategoryName, prevLocation = 'home') {
