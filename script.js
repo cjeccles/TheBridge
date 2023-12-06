@@ -68,12 +68,12 @@ function buildPage(data) {
 
       var versionEl = document.createElement('div');
       versionEl.setAttribute('id', 'version');
-      if (data.version == gitManifest.version) {
-        versionEl.innerHTML = 'Version: ' + data.version;
-        versionEl.classList.add('version-good');
-      } else {
+      if (data.version < gitManifest.version) {
         versionEl.innerHTML = 'Version: ' + data.version + ' (Update Available)';
         versionEl.classList.add('version-bad');
+      } else {
+        versionEl.innerHTML = 'Version: ' + data.version;
+        versionEl.classList.add('version-good');
       }
 
 
