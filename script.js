@@ -73,28 +73,29 @@ function buildPage(data) {
         versionEl.innerHTML = 'Version: ' + manifest.app_version;
         versionEl.classList.add('version-good');
       }
-      console.log('app version: ' + manifest.app_version);
-      console.log('git version: ' + gitManifest.app_version);
-      mainContainer.appendChild(versionEl); 
+      mainContainer.appendChild(versionEl);
+      console.log('App Version: ' + manifest.app_version);
+    })
+    .then (() => {
+      fetch(apiTilesURL)
+        .then(response => response.json())
+        .then(gitData => {
+          const decodedContent = atob(gitData.content);
+
+          const gitTiles = JSON.parse(decodedContent);
+
+          var versionEl = document.getElementById('version');
+          var versionElInner = document.createElement('span');
+          versionElInner.innerHTML = '[' + data.tilesVersion + ']';
+          if (data.tilesVersion < gitTiles.tilesVersion) {
+            versionElInner.classList.add('version-bad');
+          } else {
+            versionElInner.classList.add('version-good');
+          }
+          versionEl.appendChild(versionElInner);
+          console.log('Tiles Version: ' + data.tilesVersion);
+        })
     });
-
-  fetch(apiTilesURL)
-  .then(response => response.json())
-  .then(gitData => {
-    const decodedContent = atob(gitData.content);
-
-    const gitTiles = JSON.parse(decodedContent);
-
-    var versionEl = document.getElementById('version');
-    var versionTEl = document.createElement('span');
-    versionTEl.innerHTML = '[' + data.tilesVersion + ']';
-    if (data.tilesVersion < gitTiles.tilesVersion) {
-      versionTEl.classList.add('version-bad');
-    } else {
-      versionTEl.classList.add('version-good');
-    }
-    versionEl.appendChild(versionTEl);
-  })
 }
 
 function createTiles(tiles, parentContainer, newCategoryName, prevLocation = 'home') {
