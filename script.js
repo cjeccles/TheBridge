@@ -5,7 +5,6 @@ import manifest from "./manifest.json" assert {type: 'json'};
 var currentLocation = 'screensaver';
 var openedNewWindow = false;
 
-
 function toggleTiles(categoryNameOpen) {
   if (categoryNameOpen === 'start') {
     toggleStart();
@@ -55,34 +54,47 @@ function buildPage(data) {
   var ssTitle = document.getElementById('screensaver-title');
   ssTitle.innerHTML = 'Tap on the screen to view';
 
-  const apiURL = 'https://api.github.com/repos/cjeccles/TheBridge/contents/manifest.json'
+  const apiManifestURL = 'https://api.github.com/repos/cjeccles/TheBridge/contents/manifest.json';
+  const apiTilesURL = 'https://api.github.com/repos/cjeccles/TheBridge/contents/tiles.json';
 
-  fetch(apiURL)
+  fetch(apiManifestURL)
     .then(response => response.json())
     .then(gitData => {
       const decodedContent = atob(gitData.content);
 
       const gitManifest = JSON.parse(decodedContent);
 
-      console.log(gitManifest);
-
       var versionEl = document.createElement('div');
       versionEl.setAttribute('id', 'version');
-      if (data.version < gitManifest.version) {
-        versionEl.innerHTML = 'Version: ' + data.version + ' (Update Available)';
+      if (manifest.app_version < gitManifest.app_version) {
+        versionEl.innerHTML = 'Version: ' + manifest.app_version + ' (Update Available)';
         versionEl.classList.add('version-bad');
       } else {
-        versionEl.innerHTML = 'Version: ' + data.version;
+        versionEl.innerHTML = 'Version: ' + manifest.app_version;
         versionEl.classList.add('version-good');
       }
+      console.log('app version: ' + manifest.app_version);
+      console.log('git version: ' + gitManifest.app_version);
+      mainContainer.appendChild(versionEl); 
+    });
 
+  fetch(apiTilesURL)
+  .then(response => response.json())
+  .then(gitData => {
+    const decodedContent = atob(gitData.content);
 
-      console.log('app version: ' + data.version);
-      console.log('git version: ' + gitManifest.version);
-      mainContainer.appendChild(versionEl);
+    const gitTiles = JSON.parse(decodedContent);
 
-    })
-  
+    var versionEl = document.getElementById('version');
+    var versionTEl = document.createElement('span');
+    versionTEl.innerHTML = '[' + data.tilesVersion + ']';
+    if (data.tilesVersion < gitTiles.tilesVersion) {
+      versionTEl.classList.add('version-bad');
+    } else {
+      versionTEl.classList.add('version-good');
+    }
+    versionEl.appendChild(versionTEl);
+  })
 }
 
 function createTiles(tiles, parentContainer, newCategoryName, prevLocation = 'home') {
