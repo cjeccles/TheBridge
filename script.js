@@ -1,6 +1,14 @@
-import data from "./tiles.json" assert {type: 'json'};
-import manifest from "./manifest.json" assert {type: 'json'};
+const dataFile = fetch('tiles.json')
+const manifestFile = fetch('manifest.json');
 
+Promise.all([dataFile, manifestFile])
+  .then(responses => Promise.all(responses.map(response => response.json())))
+  .then(data => {
+    var tiles = data[0];
+    var manifest = data[1];
+    buildPage(tiles, manifest);
+  })
+.catch(error => console.log(error));
 
 var currentLocation = 'screensaver';
 var openedNewWindow = false;
@@ -41,13 +49,13 @@ function openNewWindow(url) {
   window.open(url, '_blank');
 }
 
-function buildPage(data) {
+function buildPage(tiles, manifest) {
   console.log('building page...');
 
   var mainContainer = document.getElementById('main');
 
-  console.log(data.mainTiles);
-  createTiles(data.mainTiles, mainContainer, 'home');
+  console.log(tiles.mainTiles);
+  createTiles(tiles.mainTiles, mainContainer, 'home');
 
   var start = document.getElementById('click-to-start');
   start.addEventListener('click', toggleStart);
@@ -76,7 +84,7 @@ function buildPage(data) {
       mainContainer.appendChild(versionEl);
       console.log('App Version: ' + manifest.app_version);
     })
-    .then (() => {
+    .then(() => {
       fetch(apiTilesURL)
         .then(response => response.json())
         .then(gitData => {
@@ -86,14 +94,14 @@ function buildPage(data) {
 
           var versionEl = document.getElementById('version');
           var versionElInner = document.createElement('span');
-          versionElInner.innerHTML = '[' + data.tilesVersion + ']';
-          if (data.tilesVersion < gitTiles.tilesVersion) {
+          versionElInner.innerHTML = '[' + tiles.tilesVersion + ']';
+          if (tiles.tilesVersion < gitTiles.tilesVersion) {
             versionElInner.classList.add('version-bad');
           } else {
             versionElInner.classList.add('version-good');
           }
           versionEl.appendChild(versionElInner);
-          console.log('Tiles Version: ' + data.tilesVersion);
+          console.log('Tiles Version: ' + tiles.tilesVersion);
         })
     });
 }
@@ -193,6 +201,5 @@ function handleVisibilityChange() {
 
 
 window.onload = function() {
-  buildPage(data);
   window.addEventListener('visibilitychange', handleVisibilityChange);
 }
