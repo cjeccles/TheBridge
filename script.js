@@ -8,7 +8,7 @@ Promise.all([dataFile, manifestFile])
     var manifest = data[1];
     buildPage(tiles, manifest);
   })
-.catch(error => console.log(error));
+  .catch(error => console.log(error));
 
 var currentLocation = 'screensaver';
 var openedNewWindow = false;
@@ -162,7 +162,7 @@ function createTiles(tiles, parentContainer, newCategoryName, prevLocation = 'ho
     }
 
     if (tile?.addPadding) {
-      newTile.style.padding = '5%';
+      newTile.style.padding = '2%';
       newTile.style.backgroundOrigin = 'content-box'
     }
 
