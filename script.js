@@ -161,6 +161,11 @@ function createTiles(tiles, parentContainer, newCategoryName, prevLocation = 'ho
       newTile.style.backgroundColor = tile.bg_color;
     }
 
+    if (tile?.addPadding) {
+      newTile.style.padding = '5%';
+      newTile.style.backgroundOrigin = 'content-box'
+    }
+
     if (tile?.url) {
       newTile.addEventListener('click', openNewWindow.bind(this, tile.url, false))
     }
