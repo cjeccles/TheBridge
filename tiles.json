@@ -66,13 +66,13 @@
     {
       "title": "Westmorland & Furness Council",
       "url": "https://westmorlandandfurness.gov.uk/your-council/jobs",
-      "img": "WFC.jpg",
+      "img": "wfc.jpg",
       "bg_color": "#FFFFFF"
     },
     {
       "title": "Ørsted",
       "url": "https://orsted.co.uk/careers/open-positions",
-      "img": "Orsted.jpeg",
+      "img": "orsted.jpeg",
       "bg_color": "#4099DA"
     },
     {
@@ -92,7 +92,35 @@
     {
       "title": "Submarines Delivery Agency",
       "url": "https://www.gov.uk/government/organisations/submarine-delivery-agency/about/recruitment",
-      "img": "SDA.png",
+      "img": "sda.png",
+      "bg_color": "#FFFFFF",
+      "addPadding": true
+    },
+    {
+      "title": "PHX Training",
+      "url": "https://phxtraining.co.uk/phx-courses-bae-systems/",
+      "img": "phx.png",
+      "bg_color": "#FFFFFF",
+      "addPadding": true
+    },
+    {
+      "title": "Forces Families Jobs",
+      "url": "https://www.forcesfamiliesjobs.co.uk/jobs/jobs-in-barrow-in-furness-cumbria/lc-Barrow-in-Furness,-Cumbria/lcr-25/co-225/",
+      "img": "ffj.png",
+      "bg_color": "#FFFFFF",
+      "addPadding": true
+    },
+    {
+      "title": "CTP",
+      "url": "https://www.ctp.org.uk/job-finding/directory",
+      "img": "ctp.png",
+      "bg_color": "#FFFFFF",
+      "addPadding": true
+    },
+    {
+      "title": "Adult Learning Cumbria",
+      "url": "https://adultlearning.cumbria.gov.uk/centres/barrow.asp",
+      "img": "adult-learning.png",
       "bg_color": "#FFFFFF",
       "addPadding": true
     }
