@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-07-11T09:15:10",
+  "lastUpdate": "2024-07-12T18:58:45",
   "tilesVersion": "0.9",
   "mainTiles": [
     {
@@ -99,7 +99,7 @@
     {
       "title": "PHX Training",
       "url": "https://phxtraining.co.uk/phx-courses-bae-systems/",
-      "img": "phx.png",
+      "img": "phx.webp",
       "bg_color": "#FFFFFF",
       "addPadding": true
     },
