@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2024-07-12T18:58:45",
+  "lastUpdate": "2024-07-15T09:14:49",
   "tilesVersion": "0.9",
   "mainTiles": [
     {
@@ -121,6 +121,13 @@
       "title": "Adult Learning Cumbria",
       "url": "https://adultlearning.cumbria.gov.uk/centres/barrow.asp",
       "img": "adult-learning.png",
+      "bg_color": "#FFFFFF",
+      "addPadding": true
+    },
+    {
+      "title": "Furness College",
+      "url": "https://www.furness.ac.uk",
+      "img": "furness-college.png",
       "bg_color": "#FFFFFF",
       "addPadding": true
     }
