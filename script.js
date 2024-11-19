@@ -170,6 +170,10 @@ function createTiles(tiles, parentContainer, newCategoryName, prevLocation = 'ho
       newTile.addEventListener('click', openNewWindow.bind(this, tile.url, false))
     }
 
+	if (tile?.darkText) {
+      newTile.style.color = '#65645d'
+	}
+	
     if (tile?.items) {
       console.log('tile has child items, include event listener to open new container...');
       newTile.addEventListener('click', toggleTiles.bind(this, tile.categoryName), false);

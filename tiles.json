@@ -1,12 +1,12 @@
 {
-  "lastUpdate": "2024-07-15T09:14:49",
-  "tilesVersion": "0.9",
+  "lastUpdate": "2024-11-19T15:33:39",
+  "tilesVersion": "1.0",
   "mainTiles": [
     {
       "title": "BAE Systems Careers",
       "categoryName": "bae-careers",
       "isBae": true,
-      "bg_color": "#FFFFFF",
+      "bg_color": "#ffffff",
       "img": "Bae-Systems-Logo.png",
       "items": [
         {
@@ -30,106 +30,165 @@
         }
       ]
     },
-    {
-      "title": "Inspira",
-      "url": "https://www.inspira.org.uk/help-for-you",
-      "img": "inspira.png",
-      "bg_color": "#FFFFFF"
+	{
+		"title": "Cumbria CVS",
+		"url": "https://volunteering.cumbriacvs.org.uk/",
+		"img": "cumbriacvs.png",
+		"bg_color": "#ffffff",
+		"addPadding": true
     },
-    {
-      "title": "Cumbria Careers Hub",
-      "url": "https://www.careershubcumbria.co.uk",
-      "img": "cumbria-careers-hub.png",
-      "bg_color": "#FFFFFF",
-      "addPadding": true
-    },
-    {
-      "title": "Cumbria Local Enterprise Partnership",
-      "url": "https://www.thecumbrialep.co.uk",
-      "img": "cumbria-lep.jpg",
-      "bg_color": "#FFFFFF"
-    },
-    {
-      "title": "NHS",
-      "url": "https://www.healthcareers.nhs.uk/",
-      "img": "nhs.jpg",
-      "bg_color": "#005EB8",
-      "addPadding": true
-    },
-    {
-      "title": "Cumbria CVS",
-      "url": "https://volunteering.cumbriacvs.org.uk/",
-      "img": "cumbriacvs.png",
-      "bg_color": "#FFFFFF",
-      "addPadding": true
-    },
-    {
-      "title": "Westmorland & Furness Council",
-      "url": "https://westmorlandandfurness.gov.uk/your-council/jobs",
-      "img": "wfc.jpg",
-      "bg_color": "#FFFFFF"
-    },
-    {
-      "title": "Ørsted",
-      "url": "https://orsted.co.uk/careers/open-positions",
-      "img": "orsted.jpeg",
-      "bg_color": "#4099DA"
-    },
-    {
-      "title": "Oxleys",
-      "url": "https://www.oxleygroup.com/contact-us/employment",
-      "img": "oxleys.png",
-      "bg_color": "#FFFFFF",
-      "addPadding": true
-    },
-    {
-      "title": "Ministry of Defence",
-      "url": "https://des.mod.uk/job_categories/barrow-in-furness/",
-      "img": "mod.png",
-      "bg_color": "#FFFFFF",
-      "addPadding": true
-    },
-    {
-      "title": "Submarines Delivery Agency",
-      "url": "https://www.gov.uk/government/organisations/submarine-delivery-agency/about/recruitment",
-      "img": "sda.png",
-      "bg_color": "#FFFFFF",
-      "addPadding": true
-    },
-    {
-      "title": "PHX Training",
-      "url": "https://phxtraining.co.uk/phx-courses-bae-systems/",
-      "img": "phx.webp",
-      "bg_color": "#FFFFFF",
-      "addPadding": true
-    },
-    {
-      "title": "Forces Families Jobs",
-      "url": "https://www.forcesfamiliesjobs.co.uk/jobs/jobs-in-barrow-in-furness-cumbria/lc-Barrow-in-Furness,-Cumbria/lcr-25/co-225/",
-      "img": "ffj.png",
-      "bg_color": "#FFFFFF",
-      "addPadding": true
-    },
-    {
-      "title": "CTP",
-      "url": "https://www.ctp.org.uk/job-finding/directory",
-      "img": "ctp.png",
-      "bg_color": "#FFFFFF",
-      "addPadding": true
-    },
-    {
-      "title": "Adult Learning Cumbria",
-      "url": "https://adultlearning.cumbria.gov.uk/centres/barrow.asp",
-      "img": "adult-learning.png",
-      "bg_color": "#FFFFFF",
-      "addPadding": true
-    },
-    {
-      "title": "Furness College",
-      "url": "https://www.furness.ac.uk",
-      "img": "furness-college.jpeg",
-      "bg_color": "#16232c",
-      "addPadding": true
-    }
+	{
+		"title": "Autus Cumbria",
+		"url": "https://www.autuscumbria.com",
+		"img": "autus-cumbria.webp",
+		"bg_color": "#ffffff"
+	},
+	{
+		"title": "Education, Training, Learning & Personal Development",
+		"categoryName": "trainingLearningDevelopment",
+		"bg_color": "#34737a",
+		"addPadding": true,
+		"items": [
+			{
+				"title": "Further & Higher Education",
+				"categoryName": "higherEducation",
+				"bg_color": "#94b2b0",
+				"items": [
+					{
+						"title": "University of Cumbria",
+						"url": "https://www.cumbria.ac.uk/student-life/locations/barrow-in-furness/",
+						"img": "uoc.webp",
+						"bg_color": "#ffffff",
+						"addPadding": true
+					},
+					{
+						"title": "Furness College",
+						"url": "https://www.furness.ac.uk",
+						"img": "furness-college.jpeg",
+						"bg_color": "#16232c",
+						"addPadding": true
+					},
+					{
+						"title": "UCAS",
+						"url": "https://www.ucas.com",
+						"img": "ucas.png",
+						"bg_color": "#ffffff",
+						"addPadding": true
+					}
+				]
+			},
+			{
+				"title": "Training & Skills",
+				"categoryName": "trainingSkills",
+				"bg_color": "#f9b75a",
+				"darkText": true,
+				"items":
+				[
+					{
+					  "title": "Adult Learning Cumbria",
+					  "url": "https://adultlearning.cumbria.gov.uk/centres/barrow.asp",
+					  "img": "adult-learning.png",
+					  "bg_color": "#ffffff",
+					  "addPadding": true
+					},
+					{
+					  "title": "PHX Training",
+					  "url": "https://phxtraining.co.uk/phx-courses-bae-systems/",
+					  "img": "phx.webp",
+					  "bg_color": "#ffffff",
+					  "addPadding": true
+					},
+					{
+					  "title": "Cumbria Local Enterprise Partnership",
+					  "url": "https://www.thecumbrialep.co.uk",
+					  "img": "cumbria-lep.jpg",
+					  "bg_color": "#ffffff"
+					}
+				]
+			}						
+		]
+	},
+	{
+	  "title": "Careers Advice",
+	  "categoryName": "careersAdvice",
+	  "bg_color": "#f4d1a6",
+	  "darkText": true,
+	  "items": [
+		{
+			"title": "Inspira",
+			"url": "https://www.inspira.org.uk/help-for-you",
+			"img": "inspira.png",
+			"bg_color": "#ffffff"
+		},
+		{
+			"title": "Cumbria Careers Hub",
+			"url": "https://www.careershubcumbria.co.uk",
+			"img": "cumbria-careers-hub.png",
+			"bg_color": "#ffffff",
+			"addPadding": true
+		}
+	  ]
+	},
+	{
+	  "title": "Search Vacancies",
+	  "categoryName": "vacancies",
+	  "bg_color": "#e49280",
+	  "items": [
+	    {
+		  "title": "NHS",
+		  "url": "https://www.healthcareers.nhs.uk/",
+		  "img": "nhs.jpg",
+		  "bg_color": "#005eb8",
+		  "addPadding": true
+		},
+		{
+		  "title": "Westmorland & Furness Council",
+		  "url": "https://westmorlandandfurness.gov.uk/your-council/jobs",
+		  "img": "wfc.jpg",
+		  "bg_color": "#ffffff"
+		},
+		{
+		  "title": "Ørsted",
+		  "url": "https://orsted.co.uk/careers/open-positions",
+		  "img": "orsted.jpeg",
+		  "bg_color": "#4099da"
+		},
+		{
+		  "title": "Oxleys",
+		  "url": "https://www.oxleygroup.com/contact-us/employment",
+		  "img": "oxleys.png",
+		  "bg_color": "#ffffff",
+		  "addPadding": true
+		},
+		{
+		  "title": "Ministry of Defence",
+		  "url": "https://des.mod.uk/job_categories/barrow-in-furness/",
+		  "img": "mod.png",
+		  "bg_color": "#ffffff",
+		  "addPadding": true
+		},
+		{
+		  "title": "Submarines Delivery Agency",
+		  "url": "https://www.gov.uk/government/organisations/submarine-delivery-agency/about/recruitment",
+		  "img": "sda.png",
+		  "bg_color": "#ffffff",
+		  "addPadding": true
+		},
+		{
+		  "title": "Forces Families Jobs",
+		  "url": "https://www.forcesfamiliesjobs.co.uk/jobs/jobs-in-barrow-in-furness-cumbria/lc-Barrow-in-Furness,-Cumbria/lcr-25/co-225/",
+		  "img": "ffj.png",
+		  "bg_color": "#ffffff",
+		  "addPadding": true
+		},
+		{
+		  "title": "CTP",
+		  "url": "https://www.ctp.org.uk/job-finding/directory",
+		  "img": "ctp.png",
+		  "bg_color": "#ffffff",
+		  "addPadding": true
+		}
+	  ]
+	}
   ]
 }

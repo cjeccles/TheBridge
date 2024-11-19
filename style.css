@@ -106,11 +106,12 @@ html {
 .tile {
   font-family: "Calibri Light";
   font-weight: 500;
-  font-size: 2em;
+  font-size: 1.5em;
   background-color: #ABC1CA;
   justify-content: space-around;
   width: 35vh;
   min-height: 35vh;
+  max-height: 35vh;
   border: 1px solid #3D4146;
   border-radius: 25px;
   color: white;
