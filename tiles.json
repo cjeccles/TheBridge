@@ -187,6 +187,13 @@
 		  "img": "ctp.png",
 		  "bg_color": "#ffffff",
 		  "addPadding": true
+		},
+		{
+		  "title": "Siemens Energy",
+		  "url": "https://jobs.siemens-energy.com/en_US/jobs/Jobs",
+		  "img": "siemens-energy.svg",
+		  "bg_color": "#1d1636",
+		  "addPadding": true
 		}
 	  ]
 	}
