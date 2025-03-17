@@ -194,6 +194,12 @@
 		  "img": "siemens-energy.svg",
 		  "bg_color": "#1d1636",
 		  "addPadding": true
+		},
+		{
+		  "title": "Civil Service Jobs",
+		  "url": "https://www.civilservicejobs.service.gov.uk/csr/index.cgi",
+		  "img": "civil-service.png",
+		  "bg_color": "#f9f9f9"
 		}
 	  ]
 	}
