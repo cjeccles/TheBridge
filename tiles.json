@@ -27,11 +27,6 @@
           "title": "Early Careers",
           "url": "https://www.baesystems.com/en/careers/careers-in-the-uk/early-careers",
           "isBae": true
-        },
-        {
-          "title": "Bridge to Build",
-          "url": "intent:#Intent;launchFlags=0x10000000;package=com.BAESystems.BridgeExperience;end",
-          "isBae": true
         }
       ]
     },
