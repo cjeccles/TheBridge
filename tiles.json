@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-02-09T16:49:56",
+  "lastUpdate": "2025-07-10T07:58:53",
   "tilesVersion": "1.14",
   "mainTiles": [
     {
@@ -26,11 +26,6 @@
         {
           "title": "Early Careers",
           "url": "https://www.baesystems.com/en/careers/careers-in-the-uk/early-careers",
-          "isBae": true
-        },
-        {
-          "title": "Bridge to Build",
-          "url": "intent://#Intent;package=com.BAESystems.BridgeExperience;end",
           "isBae": true
         }
       ]
