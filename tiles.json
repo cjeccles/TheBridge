@@ -30,7 +30,7 @@
         },
 		{
           "title": "Bridge to Build",
-          "url": "javascript:fully.startApplication('com.BAESystems.BridgeExperience')",
+          "intent": true,
           "isBae": true
         }
       ]

@@ -49,6 +49,14 @@ function openNewWindow(url) {
   window.open(url, '_blank');
 }
 
+function openBridgeApp() {
+	if (typeof fully !== 'undefined' && fully.startApplication) {
+		fully.startApplication('com.BAESystems.BridgeExperience');
+	} else {
+		console.warn('Fully JS interface not available');
+	}
+}
+
 function buildPage(tiles, manifest) {
   console.log('building page...');
 
@@ -169,6 +177,10 @@ function createTiles(tiles, parentContainer, newCategoryName, prevLocation = 'ho
     if (tile?.url) {
       newTile.addEventListener('click', openNewWindow.bind(this, tile.url, false))
     }
+	
+	if (tile?.intent) {
+	  newTile.addEventListener('click', openBridgeApp.bind(this));
+	}
 
 	if (tile?.darkText) {
       newTile.style.color = '#65645d'
