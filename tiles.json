@@ -30,7 +30,7 @@
         },
 		{
           "title": "Bridge to Build",
-          "intent": true,
+          "url": "intent:#Intent;launchFlags=0x10000000;package=com.BAESystems.BridgeExperience;end,
           "isBae": true
         }
       ]
